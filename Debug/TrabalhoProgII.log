@@ -1,0 +1,5 @@
+﻿  main.c
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\pegarComandos.h(7,1): error C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\string.h(436): message : consulte a declaração de 'strtok'
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\pegarComandos.h(8,1): error C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\string.h(436): message : consulte a declaração de 'strtok'

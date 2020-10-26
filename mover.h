@@ -1,0 +1,1 @@
+extern void moverObjeto(OBJETO* obj, OBJETO* to);

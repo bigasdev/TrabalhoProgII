@@ -1,0 +1,1 @@
+extern bool comandoExecutar(char* input);
