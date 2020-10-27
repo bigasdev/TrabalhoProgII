@@ -5,26 +5,27 @@ typedef struct objeto {
     const char** tag;
     struct objeto* lugar;
     struct objeto* destino;
-    const char* details;
-    const char* contents;
-    const char* textGo;
-    int            weight;
-    int            capacity;
-    int            health;
+    const char* detalhes;
+    const char* conteudo;
+    const char* textoIda;
+    int            peso;
+    int            capacidade;
 } OBJETO;
 
 extern OBJETO objs[];
 
-#define pasto      (objs + 0)
-#define caverna    (objs + 1)
-#define prata     (objs + 2)
-#define ouro       (objs + 3)
-#define guarda      (objs + 4)
-#define player     (objs + 5)
-#define entradaCaverna  (objs + 6)
-#define saidaCaverna  (objs + 7)
-#define paredePasto  (objs + 8)
-#define paredeCaverna   (objs + 9)
+#define patio      (objs + 0)
+#define vagaDireita    (objs + 1)
+#define vagaEsquerda    (objs + 2)
+#define corredorRefeitorio     (objs + 3)
+#define corredorLaboratorio       (objs + 4)
+#define player (objs + 5)
+#define guarda (objs + 6)
+#define saidaDireita     (objs + 7)
+#define saidaEsquerda       (objs + 8)
+#define cantina (objs + 9)
+#define laboratorio (objs +10)
 
-#define fimDosObjs  (objs + 10)
+
+#define fimDosObjs  (objs + 11)
 
