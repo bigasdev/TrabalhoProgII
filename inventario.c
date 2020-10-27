@@ -7,25 +7,29 @@
 void comandoPegar(const char* add)
 {
 	OBJETO* obj = estaVisivel("o que voce quer pegar", add);
-	if (obj == NULL)
+	switch (pegarDistancia(player, obj))
 	{
-		//ja foi lidado pelo estaVisivel
-	}
-	else if (obj == player)
-	{
+	case distSi:
 		printf("Voce nao deveria fazer isso com %s.\n", obj->descricao);
-	}
-	else if (obj->lugar == player)
-	{
+		break;
+	case distSegurando:
 		printf("Voce ja tem %s.\n", obj->descricao);
-	}
-	else if (obj->lugar == guarda)
+		break;
+	case distAli:
+		printf("Muito longe, chegue mais perto.\n");
+		break;
+	case distObjetoDesconhecido:
+		// ja foi lidado
+		break;
+	default:
+	if (obj->lugar == guarda)
 	{
-		printf("Voce deveria pedir ao %s educadamente.\n", obj->lugar->descricao);
+	printf("Voce deveria pedir ao %s educadamente.\n", obj->lugar->descricao);
 	}
 	else
 	{
-		moverObjeto(obj, player);
+	moverObjeto(obj, player);
+	}
 	}
 }
 

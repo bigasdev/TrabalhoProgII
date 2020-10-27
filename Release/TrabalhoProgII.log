@@ -1,8 +1,31 @@
-﻿  objetos.c
-  pegarComandos.c
+﻿  add.c
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\add.c(27,75): warning C4047: '<=': 'int' difere em níveis de indireção de 'DISTANCIA *'
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\add.c(36,51): warning C4047: 'função': 'DISTANCIA *' difere em níveis de indireção de 'int'
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\add.c(36,51): warning C4024: 'pegarObjeto': tipos diferentes para parâmetro formal e real 3
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\add.c(39,49): warning C4047: 'função': 'DISTANCIA *' difere em níveis de indireção de 'int'
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\add.c(39,49): warning C4024: 'pegarObjeto': tipos diferentes para parâmetro formal e real 3
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\add.c(63,65): warning C4047: 'função': 'DISTANCIA *' difere em níveis de indireção de 'int'
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\add.c(63,65): warning C4024: 'pegarObjeto': tipos diferentes para parâmetro formal e real 3
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\add.c(65,49): warning C4047: 'função': 'DISTANCIA *' difere em níveis de indireção de 'int'
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\add.c(65,49): warning C4024: 'pegarObjeto': tipos diferentes para parâmetro formal e real 3
+  etc.c
+  inventario.c
+  lugares.c
+  mover.c
+  objetos.c
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(16,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(17,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(18,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(19,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(20,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(21,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(22,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(23,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(24,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(25,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
   Gerando código
-  0 of 20 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+  16 of 22 functions (72.7%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
+    1 functions had inline decision re-evaluated but remain unchanged
   Finalizada a geração de código
   TrabalhoProgII.vcxproj -> C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\Release\TrabalhoProgII.exe

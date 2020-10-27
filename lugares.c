@@ -20,18 +20,29 @@ void comandoOlhar(const char* add)
 void comandoIr(const char* add)
 {
     OBJETO *obj = estaVisivel("onde voce quer ir", add);
-    if (obj == NULL)
+    switch (pegarDistancia(player, obj))
     {
-        // ja foi lidado pelo estaVisivel
-    }
-    else if (obj->lugar == NULL && obj != player->lugar)
-    {
+    case distAli:
         printf("OK.\n");
         player->lugar = obj;
         comandoOlhar("aqui");
+        break;
+    case distNaoAqui:
+        printf("Voce nao ve nenhum %s aqui.\n", add);
+        break;
+    case distObjetoDesconhecido:
+        // ja foi lidado pelo pegarInvisvel
+        break;
+    default:
+    if (obj->destino != NULL)
+    {
+    printf("OK.\n");
+    player->lugar = obj->destino;
+    comandoOlhar("aqui");
     }
     else
     {
-        printf("Voce ja esta aqui.\n");
+    printf("Voce ja esta aqui.\n");
+    }
     }
 }

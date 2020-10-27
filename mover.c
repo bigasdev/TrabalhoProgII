@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include "objetos.h"
 
-void moverObjeto(OBJETO* obj, OBJETO* to)
+void moverObjeto(OBJETO* obj, OBJETO* para)
 {
     if (obj == NULL)
     {
         // ja foi lidado
     }
-    else if (to == NULL)
+    else if (para == NULL)
     {
         printf("Nao tem ninguem para dar isso.\n");
     }
@@ -17,15 +17,15 @@ void moverObjeto(OBJETO* obj, OBJETO* to)
     }
     else
     {
-        if (to == player->lugar)
+        if (para == player->lugar)
         {
             printf("Voce jogou %s fora.\n", obj->descricao);
         }
-        else if (to != player)
+        else if (para != player)
         {
-            printf(to == guarda ? "Voce entregou %s para %s.\n"
+            printf(para == guarda ? "Voce entregou %s para %s.\n"
                 : "Voce colocou %s no %s.\n",
-                obj->descricao, to->descricao);
+                obj->descricao, para->descricao);
         }
         else if (obj->lugar == player->lugar)
         {
@@ -36,6 +36,6 @@ void moverObjeto(OBJETO* obj, OBJETO* to)
             printf("Voce conseguiu %s de %s.\n", obj->descricao,
                 obj->lugar->descricao);
         }
-        obj->lugar = to;
+        obj->lugar = para;
     }
 }
