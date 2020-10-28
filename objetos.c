@@ -14,15 +14,15 @@ static const char* tags9[] = {NULL};
 static const char* tags10[] = {NULL};
 
 OBJETO objs[] = {
-   {"Patio da fatec", tags0  , NULL , NULL, "O patio esta calmo e vazio", NULL, NULL, NULL, 9999},
-   {"Vaga da direita", tags1   , patio , vagaDireita, "a caverna e fria e vazia, cheia de goblins", NULL, NULL, NULL, 9999},
-   {"Vaga da esquerda", tags2   , patio , vagaEsquerda, "a caverna e fria e vazia, cheia de goblins", NULL, NULL, NULL, 9999},
-   {"Corredor para a cantina", tags3  , vagaDireita , cantina, "O patio esta calmo e vazio", NULL, NULL, NULL, 9999},
-   {"Corredor para o laboratorio", tags4   , vagaEsquerda , laboratorio, "a caverna e fria e vazia, cheia de goblins", NULL, NULL, NULL, 9999},
-   {"Voce mesmo", tags5  , patio , NULL, "a caverna e fria e vazia, cheia de goblins", "Voce tem:", NULL, NULL, 20},
-   {"Um guardinha", tags6   , patio , NULL, "a caverna e fria e vazia, cheia de goblins", "Ele tem:", NULL, NULL, 20},
-   {"Saida da vaga", tags7   , vagaDireita , patio, "a caverna e fria e vazia, cheia de goblins", NULL, NULL, NULL, 9999},
-   {"Saida da vaga", tags8   , vagaEsquerda , patio, "a caverna e fria e vazia, cheia de goblins", NULL, NULL, NULL, 9999},
-   {"Cantina", tags9   , NULL , NULL, "a caverna e fria e vazia, cheia de goblins", NULL, NULL, NULL, 9999},
-   {"Laboratorio", tags10   , NULL , NULL, "a caverna e fria e vazia, cheia de goblins", NULL, NULL, NULL, 9999}
+   {"Patio da fatec", tags0  , NULL , NULL, "O patio esta calmo e vazio", "Voce ve", "Bem vindo a FATEC", NULL, 9999},
+   {"Vaga da direita", tags1   , patio , vagaDireita, "Uma vaga livre na direita", "Voce ve", "Indo para a vaga da direita..", NULL, 9999},
+   {"Vaga da esquerda", tags2   , patio , vagaEsquerda, "Uma vaga livre na esquerda", "Voce ve", "Indo para a vaga da esquerda..", NULL, 9999},
+   {"Corredor para a cantina", tags3  , vagaDireita , cantina, "Corredor que leva para a cantina", "Voce ve", "Indo para a cantina..", NULL, 9999},
+   {"Corredor para o laboratorio", tags4   , vagaEsquerda , laboratorio, "Corredor que leva para o laboratorio", "Voce ve", "Indo para o laboratorio..", NULL, 9999},
+   {"Voce mesmo", tags5  , patio , NULL, "Voce mesmo, um estudante", "Voce tem:", NULL, NULL, 20},
+   {"Um guardinha", tags6   , patio , NULL, "Guarda da FATEC", "Ele tem:", NULL, NULL, 20},
+   {"Saida da vaga", tags7   , vagaDireita , patio, NULL, NULL, "Indo para o patio..", NULL, 9999},
+   {"Saida da vaga", tags8   , vagaEsquerda , patio, NULL, NULL, "Indo para o patio..", NULL, 9999},
+   {"Cantina", tags9   , NULL , "Voce ve", "A cantina da FATEC, sera que ela esta aberta hoje?", NULL, NULL, NULL, 9999},
+   {"Laboratorio", tags10   , NULL , "Voce ve", "Laboratorio", NULL, NULL, NULL, 9999}
 };

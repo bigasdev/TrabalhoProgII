@@ -52,10 +52,21 @@ int listaObjetosNoLugar(OBJETO* lugar)
         {
             if (contador++ == 0)
             {
-                printf("Voce ve:\n");
+                printf("%s:\n", lugar->conteudo);
             }
             printf("%s\n", obj->descricao);
         }
     }
     return contador;
+}
+
+int pesoDosObjetos(OBJETO* container)
+{
+    int sum = 0;
+    OBJETO* obj;
+    for (obj = objs; obj < fimDosObjs; obj++)
+    {
+        if (obj->lugar == container) sum += obj->peso;
+    }
+    return sum;
 }

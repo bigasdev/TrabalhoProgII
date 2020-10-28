@@ -14,18 +14,46 @@ void comandoOlhar(const char* add)
     }
     else
     {
-        printf("Eu nao entendo o que voce quer olhar.\n");
+        OBJETO* obj = estaVisivel("o que voce quer olhar", add);
+        switch (pegarDistancia(player, obj))
+        {
+        case distAquiInventario:
+            printf("Dificil de ver, tente pegar isso primeiro.\n");
+            break;
+        case distAli:
+            printf("Muito longe, tente chegar mais perto.\n");
+            break;
+        case distNaoAqui:
+            printf("Voce nao ve nenhum %s aqui.\n", add);
+            break;
+        case distObjetoDesconhecido:
+            // ja lidado
+            break;
+        default:
+            printf("%s", obj->detalhes);
+            listaObjetosNoLugar(obj);
+        }
     }
 }
+
+static void moverPlayer(OBJETO* passagem)
+{
+    printf("%s", passagem->textoIda);
+    if (passagem->destino != NULL)
+    {
+        player->lugar = passagem->destino;
+        printf("\n");
+        comandoOlhar("aqui");
+    }
+}
+
 void comandoIr(const char* add)
 {
     OBJETO *obj = estaVisivel("onde voce quer ir", add);
     switch (pegarDistancia(player, obj))
     {
     case distAli:
-        printf("OK.\n");
-        player->lugar = obj;
-        comandoOlhar("aqui");
+        moverPlayer(pegarPassagem(player->lugar, obj));
         break;
     case distNaoAqui:
         printf("Voce nao ve nenhum %s aqui.\n", add);
@@ -34,15 +62,6 @@ void comandoIr(const char* add)
         // ja foi lidado pelo pegarInvisvel
         break;
     default:
-    if (obj->destino != NULL)
-    {
-    printf("OK.\n");
-    player->lugar = obj->destino;
-    comandoOlhar("aqui");
-    }
-    else
-    {
-    printf("Voce ja esta aqui.\n");
-    }
+        moverPlayer(obj);
     }
 }

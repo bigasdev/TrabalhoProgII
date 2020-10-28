@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "objetos.h"
+#include "etc.h"
 
 void moverObjeto(OBJETO* obj, OBJETO* para)
 {
@@ -11,9 +12,13 @@ void moverObjeto(OBJETO* obj, OBJETO* para)
     {
         printf("Nao tem ninguem para dar isso.\n");
     }
-    else if (obj->lugar == NULL)
+    else if (obj->peso > para->capacidade)
     {
-        printf("Isso ta pesado demais.\n");
+        printf("Isso e muito pesado.\n");
+    }
+    else if (obj->peso + pesoDosObjetos(para) > para->capacidade)
+    {
+        printf("Iria ficar pesado demais.\n");
     }
     else
     {
