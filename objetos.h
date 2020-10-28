@@ -1,6 +1,8 @@
 #pragma once
+#include <stdbool.h>
 
 typedef struct objeto {
+    bool         (*condition)(void);
     const char* descricao;
     const char** tag;
     struct objeto* lugar;
@@ -29,3 +31,5 @@ extern OBJETO objs[];
 
 #define fimDosObjs  (objs + 11)
 
+#define objetoValido(obj)	((obj) != NULL && (*(obj)->condition)())
+#define praCadaObjeto(obj)	for (obj = objs; obj < fimDosObjs; obj++) if (objetoValido(obj))

@@ -22,7 +22,7 @@ static OBJETO addDesconhecido;
 static OBJETO* pegarObjeto(const char* add, OBJETO *de, DISTANCIA *distanciaMax)
 {
     OBJETO* obj, * res = NULL;
-    for (obj = objs; obj < fimDosObjs; obj++)
+    praCadaObjeto(obj)
     {
         if (objetoTag(obj, add) && pegarDistancia(de, obj) <= distanciaMax)
         {

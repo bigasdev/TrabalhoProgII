@@ -1,12 +1,14 @@
 #include <stdio.h>
+#include <stdbool.h>
 #include "objetos.h"
 #include "add.h"
 #include "etc.h"
 #include "mover.h"
+#include "match.h"
 
-void comandoPegar(const char* add)
+bool comandoPegar(void)
 {
-	OBJETO* obj = estaVisivel("o que voce quer pegar", add);
+	OBJETO* obj = estaVisivel("o que voce quer pegar", params[0]);
 	switch (pegarDistancia(player, obj))
 	{
 	case distSi:
@@ -31,24 +33,29 @@ void comandoPegar(const char* add)
 	moverObjeto(obj, player);
 	}
 	}
+	return true;
 }
 
-void executarDrop(const char* add)
+bool executarDrop(void)
 {
-	moverObjeto(verObjetos(player, "dropar", add), player->lugar);
+	moverObjeto(verObjetos(player, "dropar", params[0]), player->lugar);
+	return true;
 }
-void executarPedir(const char* add)
+bool executarPedir(void)
 {
-	moverObjeto(verObjetos(autorAqui(), "pedir", add), player);
+	moverObjeto(verObjetos(autorAqui(), "pedir", params[0]), player);
+	return true;
 }
-void executarDar(const char* add)
+bool executarDar(void)
 {
-	moverObjeto(verObjetos(player, "dar", add), autorAqui());
+	moverObjeto(verObjetos(player, "dar", params[0]), autorAqui());
+	return true;
 }
-void executarInventario(void)
+bool executarInventario(void)
 {
 	if (listaObjetosNoLugar(player) == 0)
 	{
 		printf("Voce nao tem nada.\n");
 	}
+	return true;
 }

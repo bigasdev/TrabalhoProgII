@@ -1,2 +1,3 @@
-extern void comandoOlhar(const char* add);
-extern void comandoIr(const char* add);
+extern bool comandoOlhar(void);
+extern bool comandoIr(void);
+extern bool comandoOlharAqui(void);
