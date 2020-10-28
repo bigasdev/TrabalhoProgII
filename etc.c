@@ -5,9 +5,9 @@
 OBJETO* pegarPassagem(OBJETO* de, OBJETO* para)
 {
     OBJETO* obj;
-    praCadaObjeto(obj)
+    for (obj = objs; obj < fimDosObjs; obj++)
     {
-        if (obj->lugar == de)
+        if (obj->lugar == de && obj->destino == para)
         {
             return obj;
         }
@@ -17,13 +17,13 @@ OBJETO* pegarPassagem(OBJETO* de, OBJETO* para)
 
 DISTANCIA pegarDistancia(OBJETO* de, OBJETO* para)
 {
-    return !objetoValido(para) ? distObjetoDesconhecido :
+    return para == NULL ? distObjetoDesconhecido :
         para == de ? distSi :
         para->lugar == de ? distSegurando :
         para == de->lugar ? distLugar :
         para->lugar == de->lugar ? distAqui :
         pegarPassagem(de->lugar, para) != NULL ? distAli :
-        !objetoValido(para->lugar)  ? distNaoAqui :
+        para->lugar == NULL ? distNaoAqui :
         para->lugar->lugar == de ? distSegurandoInventario :
         para->lugar->lugar == de->lugar ? distAquiInventario :
         distNaoAqui;
@@ -32,9 +32,9 @@ DISTANCIA pegarDistancia(OBJETO* de, OBJETO* para)
 OBJETO* autorAqui(void)
 {
     OBJETO* obj;
-    praCadaObjeto(obj)
+    for (obj = objs; obj < fimDosObjs; obj++)
     {
-        if (pegarDistancia(player, obj) == distAqui)
+        if (pegarDistancia(player, obj) == distAqui && obj == guarda)
         {
             return obj;
         }
@@ -46,7 +46,7 @@ int listaObjetosNoLugar(OBJETO* lugar)
 {
     int contador = 0;
     OBJETO* obj;
-    praCadaObjeto(obj)
+    for (obj = objs; obj < fimDosObjs; obj++)
     {
         if (obj != player && obj->lugar == lugar)
         {
@@ -64,7 +64,7 @@ int pesoDosObjetos(OBJETO* container)
 {
     int sum = 0;
     OBJETO* obj;
-    praCadaObjeto(obj)
+    for (obj = objs; obj < fimDosObjs; obj++)
     {
         if (obj->lugar == container) sum += obj->peso;
     }

@@ -143,7 +143,6 @@
     <ClCompile Include="inventario.c" />
     <ClCompile Include="lugares.c" />
     <ClCompile Include="main.c" />
-    <ClCompile Include="match.c" />
     <ClCompile Include="mover.c" />
     <ClCompile Include="objetos.c" />
     <ClCompile Include="pegarComandos.c" />
@@ -153,7 +152,6 @@
     <ClInclude Include="etc.h" />
     <ClInclude Include="inventario.h" />
     <ClInclude Include="lugares.h" />
-    <ClInclude Include="match.h" />
     <ClInclude Include="mover.h" />
     <ClInclude Include="objetos.h" />
     <ClInclude Include="pegarComandos.h" />

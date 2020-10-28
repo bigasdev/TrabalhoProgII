@@ -39,9 +39,6 @@
     <ClCompile Include="mover.c">
       <Filter>Arquivos de Recurso</Filter>
     </ClCompile>
-    <ClCompile Include="match.c">
-      <Filter>Arquivos de Recurso</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pegarComandos.h">
@@ -63,9 +60,6 @@
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
     <ClInclude Include="mover.h">
-      <Filter>Arquivos de Cabeçalho</Filter>
-    </ClInclude>
-    <ClInclude Include="match.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
   </ItemGroup>

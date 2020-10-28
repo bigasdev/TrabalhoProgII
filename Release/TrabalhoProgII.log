@@ -1,46 +1,6 @@
-﻿  add.c
-C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\add.c(27,75): warning C4047: '<=': 'int' difere em níveis de indireção de 'DISTANCIA *'
-C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\add.c(36,51): warning C4047: 'função': 'DISTANCIA *' difere em níveis de indireção de 'int'
-C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\add.c(36,51): warning C4024: 'pegarObjeto': tipos diferentes para parâmetro formal e real 3
-C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\add.c(39,49): warning C4047: 'função': 'DISTANCIA *' difere em níveis de indireção de 'int'
-C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\add.c(39,49): warning C4024: 'pegarObjeto': tipos diferentes para parâmetro formal e real 3
-C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\add.c(63,65): warning C4047: 'função': 'DISTANCIA *' difere em níveis de indireção de 'int'
-C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\add.c(63,65): warning C4024: 'pegarObjeto': tipos diferentes para parâmetro formal e real 3
-C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\add.c(65,49): warning C4047: 'função': 'DISTANCIA *' difere em níveis de indireção de 'int'
-C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\add.c(65,49): warning C4024: 'pegarObjeto': tipos diferentes para parâmetro formal e real 3
-  etc.c
-  inventario.c
-  lugares.c
-  match.c
-  mover.c
-  objetos.c
-C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(17,1): warning C4047: 'inicializando': 'bool (__cdecl *)(void)' difere em níveis de indireção de 'int'
-C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(17,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
-C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(18,1): warning C4047: 'inicializando': 'bool (__cdecl *)(void)' difere em níveis de indireção de 'int'
-C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(18,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
-C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(19,1): warning C4047: 'inicializando': 'bool (__cdecl *)(void)' difere em níveis de indireção de 'int'
-C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(19,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
-C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(20,1): warning C4047: 'inicializando': 'bool (__cdecl *)(void)' difere em níveis de indireção de 'int'
-C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(20,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
-C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(21,1): warning C4047: 'inicializando': 'bool (__cdecl *)(void)' difere em níveis de indireção de 'int'
-C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(21,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
-C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(22,1): warning C4047: 'inicializando': 'bool (__cdecl *)(void)' difere em níveis de indireção de 'int'
-C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(22,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
-C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(23,1): warning C4047: 'inicializando': 'bool (__cdecl *)(void)' difere em níveis de indireção de 'int'
-C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(23,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
-C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(24,1): warning C4047: 'inicializando': 'bool (__cdecl *)(void)' difere em níveis de indireção de 'int'
-C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(24,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
-C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(25,1): warning C4047: 'inicializando': 'bool (__cdecl *)(void)' difere em níveis de indireção de 'int'
-C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(25,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
-C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(26,1): warning C4047: 'inicializando': 'bool (__cdecl *)(void)' difere em níveis de indireção de 'int'
-C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(26,1): warning C4133: 'inicializando': tipos incompatíveis - de 'char [8]' para 'objeto *'
-C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(26,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
-C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(27,1): warning C4047: 'inicializando': 'bool (__cdecl *)(void)' difere em níveis de indireção de 'int'
-C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(27,1): warning C4133: 'inicializando': tipos incompatíveis - de 'char [8]' para 'objeto *'
-C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(27,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
-  pegarComandos.c
+﻿  pegarComandos.c
   Gerando código
-  0 of 35 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+  2 of 26 functions ( 7.7%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
     0 functions had inline decision re-evaluated but remain unchanged
   Finalizada a geração de código

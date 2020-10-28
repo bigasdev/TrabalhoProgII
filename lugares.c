@@ -1,22 +1,20 @@
 #include <stdio.h>
 #include <string.h>
-#include <stdbool.h>
 #include "objetos.h"
 #include "etc.h"
 #include "add.h"
-#include "match.h"
 
-bool comandoOlharAqui(void)
+
+void comandoOlhar(const char* add)
 {
-    printf("Voce esta no/a %s.\n", player->lugar->descricao);
-    listaObjetosNoLugar(player->lugar);
-    return true;
-}
-
-
-bool comandoOlhar(void)
-{
-        OBJETO* obj = estaVisivel("o que voce quer olhar", params[0]);
+    if (add != NULL && strcmp(add, "aqui") == 0)
+    {
+        printf("Voce esta na/o %s.\n", player->lugar->descricao);
+        listaObjetosNoLugar(player->lugar);
+    }
+    else
+    {
+        OBJETO* obj = estaVisivel("o que voce quer olhar", add);
         switch (pegarDistancia(player, obj))
         {
         case distAquiInventario:
@@ -26,7 +24,7 @@ bool comandoOlhar(void)
             printf("Muito longe, tente chegar mais perto.\n");
             break;
         case distNaoAqui:
-            printf("Voce nao ve nenhum %s aqui.\n", params[0]);
+            printf("Voce nao ve nenhum %s aqui.\n", add);
             break;
         case distObjetoDesconhecido:
             // ja lidado
@@ -34,8 +32,8 @@ bool comandoOlhar(void)
         default:
             printf("%s", obj->detalhes);
             listaObjetosNoLugar(obj);
-        }   
-        return true;
+        }
+    }
 }
 
 static void moverPlayer(OBJETO* passagem)
@@ -45,20 +43,20 @@ static void moverPlayer(OBJETO* passagem)
     {
         player->lugar = passagem->destino;
         printf("\n");
-        comandoOlharAqui();
+        comandoOlhar("aqui");
     }
 }
 
-bool comandoIr(void)
+void comandoIr(const char* add)
 {
-    OBJETO *obj = estaVisivel("onde voce quer ir", params[0]);
+    OBJETO *obj = estaVisivel("onde voce quer ir", add);
     switch (pegarDistancia(player, obj))
     {
     case distAli:
         moverPlayer(pegarPassagem(player->lugar, obj));
         break;
     case distNaoAqui:
-        printf("Voce nao ve nenhum %s aqui.\n", params[0]);
+        printf("Voce nao ve nenhum %s aqui.\n", add);
         break;
     case distObjetoDesconhecido:
         // ja foi lidado pelo pegarInvisvel
@@ -66,5 +64,4 @@ bool comandoIr(void)
     default:
         moverPlayer(obj);
     }
-    return true;
 }
