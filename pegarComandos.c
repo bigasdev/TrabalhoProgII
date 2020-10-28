@@ -39,7 +39,7 @@ bool comandoExecutar(char* input)
         {
             executarPedir(add);
         }
-        else if (strcmp(verbo, "inventario") == 0)
+        else if (strcmp(verbo, "mochila") == 0)
         {
             executarInventario();
         }
