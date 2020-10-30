@@ -1,6 +1,35 @@
-﻿  pegarComandos.c
+﻿  objetos.c
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(33,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(34,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(35,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(36,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(37,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(38,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(39,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(40,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(41,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(42,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(43,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(44,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(45,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(46,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(47,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(48,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(49,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(50,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(51,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(52,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(53,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(54,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(55,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(56,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(57,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(58,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(59,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(60,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
+C:\Users\gusta\Desktop\TrabalhoProgII\TrabalhoProgII\TrabalhoProgII\objetos.c(61,1): warning C4047: 'inicializando': 'int' difere em níveis de indireção de 'void *'
   Gerando código
-  2 of 26 functions ( 7.7%) were compiled, the rest were copied from previous compilation.
+  0 of 26 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
     0 functions had inline decision re-evaluated but remain unchanged
   Finalizada a geração de código

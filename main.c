@@ -50,7 +50,21 @@ static bool getInput(const char* filename)
 
 int main()
 {
-    printf("Utilize verbos como 'ir' ou 'olhar' para se aventurar por onde e como quiser.\n");
+    printf("\n");
+    printf("FATECANO e um jogo de aventura por texto, nele temos o mapa da FATEC livre\n");
+    printf("para ser explorado com itens e pessoas para interagir.\n");
+    printf("O objetivo do jogo e coletar objetos e explorar a Fatec.\n");
+    printf("\n");
+    printf("Lista de comandos:\n");
+    printf("\n'ir' + 'lugar' para se mover para o local.\n");
+    printf("\n'olhar' + 'lugar/objeto/pessoa' para observar.\n");
+    printf("\n'pegar' + 'objeto' para pegar tal coisa.\n");
+    printf("\n'dropar' + 'objeto' para jogar fora.\n");
+    printf("\n'dar' + 'objeto' para dar o objeto para a pessoa que estiver no local.\n");
+    printf("\n'pedir' + 'objeto' para pedir o objeto para a pessoa que estiver no local.\n");
+    printf("\n'mochila' para ver sua mochila.\n");
+    printf("\n'sair' para fechar o jogo.\n");
+    printf("\n");
     while (comandoExecutar(input) && getInput("Save.txt"));
     printf("\nAte mais tarde!\n");
     return 0;
